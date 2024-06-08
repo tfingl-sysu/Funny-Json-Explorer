@@ -1,4 +1,5 @@
 from Icon import *
+# 组合模式建立树形结构
 class TreeComponent:
     def print_tree(self,endflag,icon,depth=0):
        pass
@@ -8,10 +9,10 @@ class TreeLeaf(TreeComponent):
         self.name=name
     def print_tree(self,endflag,icon,depth=0):
         for i in range(depth):
-            # 如果已经是最后一个子树，那么前面会打印└─不需要再打印│衔接
+            # 如果已经是最后一个叶子，那么前面会打印└─不需要再打印│衔接
             if endflag[i]:
                 print('   ',end='')
-            # 如果这个不是最后一个子树就需要打印│衔接前面
+            # 如果这个不是最后一个叶子就需要打印│衔接前面
             else:
                 print('\u2502  ',end='')
         # 如果是最后一个叶子要打印出└─衔接前面并终结
@@ -51,10 +52,13 @@ class TreeComposite(TreeComponent):
         print(self.name)
         size=len(self.children)
         endflag.append(False)
+        # 先打印非最后子树，传入终结信号为False
         for i in range(size-1):
             self.children[i].print_tree(endflag,icon,depth+1)
+        # 最后子树将终结信号改为True
         endflag.pop()
         endflag.append(True)
+        # 防止空子树错误
         if size:
             self.children[-1].print_tree(endflag,icon,depth+1)
         endflag.pop()

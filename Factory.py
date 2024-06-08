@@ -19,7 +19,7 @@ class TreeStyleFactory(AbstractFactory):
         style=TreeStyleJson()
         style.build_icon(icon)
         return style
-# 矩形类工厂 
+# 矩形类工厂，创建矩形Json
 class RectangleStyleFactory(AbstractFactory):
     def create(self,icon):
         style=RectangleStyleJson()

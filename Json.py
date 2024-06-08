@@ -1,3 +1,4 @@
+# xxStyleJson的基类
 class Json:
     def __init__(self):
         self.icon=None
