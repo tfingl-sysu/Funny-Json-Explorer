@@ -1,11 +1,13 @@
 from Json import *
 from Icon import *
 from RectangleComponent import *
+# 全局变量获取输出最长的长度以规整矩形
 maxlen=0
 # 树形Json，内部含有icon的建造和组合print
 class RectangleStyleJson(Json):
     def __init__(self):
         self.icon=None
+    # 建立icon
     def build_icon(self,icon):
         self.icon=Icon().setIcon(icon)
     # 建立根
@@ -34,10 +36,8 @@ class RectangleStyleJson(Json):
             length=len(name)
             if length>maxlen:
                 maxlen=length
-        if len(keys)==1:
-            root.print_tree(0,self.icon,maxlen)
-        else:
-            root.print_tree(1,self.icon,maxlen)
+        # 下面代码有未解决的问题:根节点只有一颗子树时如何打印矩形结构?如果只有一行如何打印?
+        root.print_tree(1,self.icon,maxlen)
         # 非最后一个节点
         for name in keys[1:-1]:
             # 子树不是叶子节点

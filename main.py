@@ -11,10 +11,12 @@ if __name__ == '__main__':
     # 解析命令行参数
     args=parser.parse_args()
     # 处理命令行参数并输出结果
+    # 读取JSON文件
     with open(args.filename) as f:
         json_data=json.load(f)
-    # print(type(json_data))
-    # print(json_data['oranges'])
+    # 创建工厂
     factory=AbstractFactory().createfactory(args.style)
+    # 获得成品
     product=factory.create(args.icon_family)
+    # 打印结果
     product.build_tree(json_data)
