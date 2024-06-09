@@ -24,3 +24,4 @@ class RectangleStyleFactory(AbstractFactory):
     def create(self,icon):
         style=RectangleStyleJson()
         style.build_icon(icon)
+        return style
