@@ -5,7 +5,7 @@ class RectangleComponent:
         pass
     def remove(self,child):
         pass
-    def print_tree(self,endflag,icon,depth=0):
+    def print_tree(self,endflag,icon,maxlen,depth=0):
         pass
 # 叶子节点
 class RectangleLeaf(RectangleComponent):
