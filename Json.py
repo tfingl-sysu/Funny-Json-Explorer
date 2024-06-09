@@ -4,5 +4,7 @@ class Json:
         self.icon=None
     def build_icon(self,icon):
         pass
-    def build_tree(self,json):
+    def build_tree(self,json_data):
+        pass
+    def build_subtree(self,parent,children):
         pass
