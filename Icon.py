@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # icon_family的实现,目前仅试下两种
 class Icon:
     def setIcon(self,icon):
