@@ -1,6 +1,10 @@
 from Icon import *
 # 组合模式建立矩形结构
 class RectangleComponent:
+    def add(self,child):
+        pass
+    def remove(self,child):
+        pass
     def print_tree(self,endflag,icon,depth=0):
        pass
 # 叶子节点
