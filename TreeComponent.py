@@ -1,8 +1,12 @@
 from Icon import *
 # 组合模式建立树形结构
 class TreeComponent:
+    def add(self,child):
+        pass
+    def remove(self,child):
+        pass
     def print_tree(self,endflag,icon,depth=0):
-       pass
+        pass
 # 叶子节点
 class TreeLeaf(TreeComponent):
     def __init__(self,name):
