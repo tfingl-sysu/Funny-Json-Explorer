@@ -8,5 +8,5 @@ python main.py -f <json file> -s <tree/rectangle> -i <none/poker/music>
 ```
 python main.py -f test.json -s tree -i poker
 ```
-得到下图结果
+得到下图结果  
 ![alt text](image.png)
