@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import argparse
 import json
 from Factory import *
