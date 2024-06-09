@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from Json import *
 from Icon import *
 from RectangleComponent import *
@@ -110,7 +109,6 @@ class RectangleStyleJson(Json):
                     if length>maxlen:
                         maxlen=length
                 parent.add(leaf)
-=======
 from Json import *
 from Icon import *
 from RectangleComponent import *
@@ -222,5 +220,4 @@ class RectangleStyleJson(Json):
                     if length>maxlen:
                         maxlen=length
                 parent.add(leaf)
->>>>>>> 53139399b378f878de60ae95f2179f5fad019f86
                 

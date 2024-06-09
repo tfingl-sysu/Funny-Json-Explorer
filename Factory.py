@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from TreeStyleJson import *
 from RectangleStyleJson import *
 # 抽象工厂，创建树形类工厂和矩形类工厂
@@ -25,7 +24,6 @@ class RectangleStyleFactory(AbstractFactory):
     def create(self,icon):
         style=RectangleStyleJson()
         style.build_icon(icon)
-=======
 from TreeStyleJson import *
 from RectangleStyleJson import *
 # 抽象工厂，创建树形类工厂和矩形类工厂
@@ -52,5 +50,4 @@ class RectangleStyleFactory(AbstractFactory):
     def create(self,icon):
         style=RectangleStyleJson()
         style.build_icon(icon)
->>>>>>> 53139399b378f878de60ae95f2179f5fad019f86
         return style
